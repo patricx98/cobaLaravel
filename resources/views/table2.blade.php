@@ -1,4 +1,7 @@
- <div class="card">
+@extends('master')
+
+@section('content')
+  <div class="card">
       <div class="card-header">
         <h3 class="card-title">DataTable with default features</h3>
       </div>
@@ -436,8 +439,9 @@
       </div>
       <!-- /.card-body -->
     </div>
+@endsection
 
-    
+@push('scripts')
 <script src="../../plugins/datatables/jquery.dataTables.js"></script>
 <script src="../../plugins/datatables-bs4/js/dataTables.bootstrap4.js"></script>
 <script>
@@ -445,3 +449,4 @@
     $("#example1").DataTable();
   });
 </script>
+@endpush

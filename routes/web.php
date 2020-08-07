@@ -13,6 +13,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/master', function () {
     return view('master');
+});
+
+Route::get('/', function () {
+    return view('table1');
+});
+
+Route::get('/data-tables', function () {
+    return view('table2');
 });

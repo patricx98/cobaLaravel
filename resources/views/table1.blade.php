@@ -1,3 +1,6 @@
+@extends('master')
+
+@section('content')
 <table class="table table-bordered">
   <thead>                  
     <tr>
@@ -49,4 +52,4 @@
       <td><span class="badge bg-success">90%</span></td>
     </tr>
   </tbody>
-</table>
+@endsection
